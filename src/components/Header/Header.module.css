@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  padding: 0 2em;
+  background-color: #bdbdbd7d;
+  flex-direction: column;
+}
+
+.header p {
+  color: gray;
+}
