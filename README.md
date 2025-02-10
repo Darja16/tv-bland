@@ -28,7 +28,7 @@ npm run dev
 Script for running tests
 
 ```
-npm run dev
+npm run test
 ```
 
 ## Folder Structure
