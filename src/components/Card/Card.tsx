@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 
@@ -10,13 +9,13 @@ interface CardProps {
   rating: number | null;
 }
 
-export const Card: React.FC<CardProps> = ({
+export function Card({
   id,
   title,
   season,
   imageUrl,
   rating,
-}) => {
+}: CardProps): React.ReactElement {
   return (
     <Link to={`/show-detail/${id}`} className={styles.card}>
       <div className={styles.imagePlaceholder}>
@@ -39,4 +38,4 @@ export const Card: React.FC<CardProps> = ({
       </div>
     </Link>
   );
-};
+}

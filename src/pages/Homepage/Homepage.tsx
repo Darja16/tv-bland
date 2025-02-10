@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSchedule } from '../../hooks/useSchedule';
 import { Header } from '../../components/Header/Header';
 import { Card } from '../../components/Card/Card';

@@ -27,11 +27,11 @@ export function useSchedule(page: number) {
 
   const schedule: ScheduleItem[] =
     data?.map((item: any) => ({
-      id: item.show.id,
-      name: item.show.name,
+      id: item.id,
+      name: item.name,
       season: item.season,
-      rating: item.show.rating.average ?? 0,
-      image: item.show.image?.medium || null,
+      rating: item.rating.average ?? 0,
+      image: item.image?.medium || null,
     })) || [];
 
   return { schedule, isLoading, isError };

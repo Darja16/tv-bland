@@ -1,4 +1,3 @@
-import React from 'react';
 import { TEXTS } from '../../constants/textConstants';
 
 import styles from './Header.module.css';

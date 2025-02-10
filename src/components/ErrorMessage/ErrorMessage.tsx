@@ -1,4 +1,3 @@
-import React from 'react';
 import errorImg from '../../assets/error.gif';
 
 import styles from './ErrorMessage.module.css';

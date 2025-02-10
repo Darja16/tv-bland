@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './InfoSection.module.css';
 
 interface InfoItem {
@@ -11,7 +10,10 @@ interface InfoSectionProps {
   data: InfoItem[];
 }
 
-export function InfoSection({ title, data }: InfoSectionProps) {
+export function InfoSection({
+  title,
+  data,
+}: InfoSectionProps): React.ReactElement {
   return (
     <div className={styles.infoSection}>
       <h2 className={styles.title}>{title}</h2>

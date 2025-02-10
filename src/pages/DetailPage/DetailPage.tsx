@@ -1,4 +1,3 @@
-import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useShowDetails } from '../../hooks/useShowDetails';
 import { Loading } from '../../components/Loading';
@@ -22,6 +21,28 @@ export function DetailPage(): React.ReactElement {
   if (isLoading) return <Loading />;
   if (isError) return <ErrorMessage />;
 
+  const INFO_SECTION_COLUMN_1 = [
+    {
+      label: 'Streamed on',
+      context: showDetails?.network?.name || 'N/A',
+    },
+    {
+      label: 'Schedule',
+      context: showDetails?.schedule?.days?.join(', ') || 'N/A',
+    },
+    { label: 'Status', context: showDetails?.status || 'N/A' },
+    {
+      label: 'Genres',
+      context: showDetails?.genres?.join(', ') || 'N/A',
+    },
+  ];
+
+  const INFO_SECTION_COLUMN_2 = [
+    { label: 'Type', context: showDetails?.type || 'N/A' },
+    { label: 'Language', context: showDetails?.language || 'N/A' },
+    { label: 'Runtime', context: showDetails?.runtime?.toString() || 'N/A' },
+  ];
+
   return (
     <div className={styles.detailPage}>
       <header>
@@ -42,7 +63,7 @@ export function DetailPage(): React.ReactElement {
         />
         <div className={styles.mainInfo}>
           <p className={styles.rating}>
-            ⭐ {showDetails?.rating.average || 'No ratings yet'}
+            ⭐ {showDetails?.rating?.average || 'No ratings yet'}
           </p>
           <h1>{showDetails?.name}</h1>
           <p
@@ -53,32 +74,8 @@ export function DetailPage(): React.ReactElement {
         </div>
       </main>
       <section className={styles.infoSectionContainer}>
-        <InfoSection
-          title="Show Info"
-          data={[
-            {
-              label: 'Streamed on',
-              context: showDetails.network?.name || 'N/A',
-            },
-            {
-              label: 'Schedule',
-              context: showDetails.schedule?.days?.join(', ') || 'N/A',
-            },
-            { label: 'Status', context: showDetails.status },
-            {
-              label: 'Genres',
-              context: showDetails.genres?.join(', ') || 'N/A',
-            },
-          ]}
-        />
-        <InfoSection
-          title="Other"
-          data={[
-            { label: 'Type', context: showDetails.type },
-            { label: 'Language', context: showDetails.language },
-            { label: 'Runtime', context: showDetails.runtime },
-          ]}
-        />
+        <InfoSection title="Show Info" data={INFO_SECTION_COLUMN_1} />
+        <InfoSection title="Other" data={INFO_SECTION_COLUMN_2} />
       </section>
     </div>
   );
