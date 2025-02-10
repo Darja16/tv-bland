@@ -25,6 +25,12 @@ Now, you can start a local web server by running:
 npm run dev
 ```
 
+Script for running tests
+
+```
+npm run dev
+```
+
 ## Folder Structure
 
 ```js
@@ -42,6 +48,7 @@ src/
 │   ├── Header/
 │   │   ├── Header.module.css           # Styles for Header component
 │   │   ├── Header.tsx                  # Application header
+│   │   ├── Header.test.tsx             # Unit test
 │   │   └── index.ts                    # Barrel file for Header
 │   ├── InfoSection/
 │   │   ├── index.ts                    # Barrel file for InfoSection
@@ -54,6 +61,7 @@ src/
 │   ├── Pagination/
 │   │   └── index.ts                    # Barrel file for Pagination
 │   │   ├── Pagination.module.css       # Styles for Pagination component
+│   │   ├── Pagination.test.tsx         # Unit testing
 │   │   ├── Pagination.tsx              # The Pagination component provides navigation controls
 ├── constants/
 │   └── textConstants.ts                # Static text

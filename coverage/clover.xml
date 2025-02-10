@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1739219520318" clover="3.2.0">
-  <project timestamp="1739219520318" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
-    <file name="Pagination.tsx" path="C:\Users\Darja\Desktop\apps\tv-bland\src\components\Pagination\Pagination.tsx">
+<coverage generated="1739220277950" clover="3.2.0">
+  <project timestamp="1739220277950" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="14" coveredelements="14" complexity="0" loc="10" ncloc="10" packages="3" files="3" classes="3"/>
+    <package name="components.Header">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Header.tsx" path="C:\Users\Darja\Desktop\apps\tv-bland\src\components\Header\Header.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Pagination">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="13" count="1" type="stmt"/>
-      <line num="17" count="4" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="26" count="1" type="stmt"/>
-    </file>
+      <file name="Pagination.tsx" path="C:\Users\Darja\Desktop\apps\tv-bland\src\components\Pagination\Pagination.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="constants">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="textConstants.ts" path="C:\Users\Darja\Desktop\apps\tv-bland\src\constants\textConstants.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
